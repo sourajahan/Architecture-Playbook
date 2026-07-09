@@ -4,8 +4,8 @@
 
 ---
 
-## 🗺️ The Visual Map
-The software architect stands at the intersection of business goals and technical execution:
+## 🏗️ System Landscape
+A high-level view of the Architect's position within the organizational ecosystem.
 
 ```mermaid
 graph TD
@@ -14,6 +14,7 @@ graph TD
     Architect -- "Constraint Alignment" --> Infra[Infrastructure & Security]
     TechTeam -- "Feedback & Implementation" --> Architect
     
-    style Architect fill:#f9f,stroke:#333,stroke-width:4px
-    style Stakeholders fill:#e1f5fe,stroke:#01579b
-    style TechTeam fill:#e8f5e9,stroke:#1b5e20
+    style Architect fill:#2e7d32,stroke:#fff,stroke-width:2px,color:#fff
+    style Stakeholders fill:#1565c0,stroke:#fff,color:#fff
+    style TechTeam fill:#455a64,stroke:#fff,color:#fff
+    style Infra fill:#455a64,stroke:#fff,color:#fff
