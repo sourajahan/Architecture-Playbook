@@ -1,4 +1,4 @@
-# 01: What is Software Architecture?
+ # 01: What is Software Architecture?
 
 > "Architecture is the bridge between business requirements and technical implementation."
 
@@ -21,18 +21,17 @@ graph TD
 
 
 
-
-
 🎯 Core Concepts
 Software architecture is not just about writing code; it is the art of making trade-offs.
 
-1. The Blueprint
+The Blueprint
 Defines high-level structures, interaction patterns, and system boundaries.
 
-2. Decision Making
+Decision Making
 Architecture is defined by significant decisions that are costly to change later.
 
-3. Quality Attributes ("The -ilities")
+Quality Attributes ("The -ilities")
+
 Scalability: Handles growth?
 
 Maintainability: Easy to update?
@@ -46,4 +45,4 @@ A professional architect seeks the right system for the specific context, not th
 
 Trade-off Analysis: Prioritizing constraints effectively.
 
-Bridge Building: Translating business goals into technical reality
+Bridge Building: Translating business goals into technical reality.
