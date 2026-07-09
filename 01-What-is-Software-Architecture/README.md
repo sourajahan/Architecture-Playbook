@@ -17,32 +17,3 @@ graph TD
     style Architect fill:#f9f,stroke:#333,stroke-width:4px
     style Stakeholders fill:#e1f5fe,stroke:#01579b
     style TechTeam fill:#e8f5e9,stroke:#1b5e20
-
-
-
-
-🎯 Core Concepts
-Software architecture is not just about writing code; it is the art of making trade-offs.
-
-The Blueprint
-Defines high-level structures, interaction patterns, and system boundaries.
-
-Decision Making
-Architecture is defined by significant decisions that are costly to change later.
-
-Quality Attributes ("The -ilities")
-
-Scalability: Handles growth?
-
-Maintainability: Easy to update?
-
-Reliability: Stable under load?
-
-Security: Protected?
-
-🧠 The Architect's Mindset
-A professional architect seeks the right system for the specific context, not the "perfect" system.
-
-Trade-off Analysis: Prioritizing constraints effectively.
-
-Bridge Building: Translating business goals into technical reality.
