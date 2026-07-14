@@ -1,0 +1,9 @@
+<!-- SOAP is Verbose, but it is Self-Describing and Strictly Typed -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <getAccountDetails xmlns="http://bank.com/services">
+         <accountID>123456789</accountID>
+      </getAccountDetails>
+   </soapenv:Body>
+</soapenv:Envelope>
