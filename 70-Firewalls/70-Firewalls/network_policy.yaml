@@ -1,0 +1,29 @@
+package security
+
+// NetworkPolicy represents the strict communication contract for a microservice.
+// This is the "Zero Trust" model: Default DENY.
+type NetworkPolicy struct {
+	ServiceName string
+	Namespace   string
+	Ingress     []Rule // Who can call us
+	Egress      []Rule // Who we can call
+}
+
+type Rule struct {
+	PeerNamespace string
+	PeerLabel     string
+	Port          int
+	Protocol      string // TCP, UDP, SCTP
+}
+
+// GetDefaultMicrosegmentationPolicy creates a "Strict Deny" baseline.
+func GetDefaultMicrosegmentationPolicy(svcName string) NetworkPolicy {
+	return NetworkPolicy{
+		ServiceName: svcName,
+		Namespace:   "production",
+		// Default: Nothing is allowed.
+		Ingress: []Rule{}, 
+		// Default: No outbound calls allowed.
+		Egress:  []Rule{},
+	}
+}
