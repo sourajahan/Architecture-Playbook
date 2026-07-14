@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package order;
+
+// The Contract: Strong typing at the definition level
+message OrderRequest {
+  string order_id = 1;
+}
+
+message OrderResponse {
+  string status = 1;
+  float total_amount = 2;
+}
+
+service OrderService {
+  rpc GetOrder(OrderRequest) returns (OrderResponse);
+}
